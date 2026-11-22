@@ -1,2 +1,2 @@
 def slugify(text):
-    return text.strip().replace(" ", "-")
+    return "-".join(text.strip().lower().split())
