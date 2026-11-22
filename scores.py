@@ -1,2 +1,2 @@
 def top_scores(scores, n):
-    return sorted(scores)[:n]
+    return sorted(scores, reverse=True)[:n]
