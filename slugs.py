@@ -1,2 +1,3 @@
 def slugify(text):
-    return text.strip().replace(" ", "-")
+    words = text.split()
+    return '-'.join(word.capitalize().lower() for word in words)
